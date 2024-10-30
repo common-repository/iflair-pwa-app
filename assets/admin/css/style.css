@@ -1,0 +1,284 @@
+*{
+    box-sizing: border-box;
+}
+.ifpwap_toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+/* Hide the checkbox input */
+.ifpwap_toggle input {
+    display: none;
+}
+/* Describe slider's look and position. */
+.ifpwap_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: .4s;
+    border-radius: 34px;
+}
+/* Describe the white ball's location and appearance in the slider. */
+.ifpwap_slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+/* Modify the slider's background color to green once the checkbox has been selected. */
+input:checked+.ifpwap_slider {
+    background-color: #2271b1;
+}
+/* When the checkbox is checked, shift the white ball towards the right within the slider. */
+.ifpwap-plugin .form-table th {
+    min-width: 250px;
+    vertical-align: middle;
+}
+input:checked+.ifpwap_slider:before {
+    transform: translateX(26px);
+}
+.ifpwap-plugin .nav-tab-active,
+.ifpwap-plugin .nav-tab-active:focus,
+.ifpwap-plugin .nav-tab-active:focus:active,
+.ifpwap-plugin .nav-tab-active:hover {
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+.ifpwap-plugin .nav-tab-wrapper .nav-tab:first-child {
+    margin-left: 0;
+}
+.ifpwap-plugin .tab-content {
+    background-color: transparent;
+    display: block;
+    border-width: 0;
+    padding: 0;
+}
+.ifpwap-plugin .tab-content form table tr td input:not([type="radio"]),
+.ifpwap-plugin .tab-content form table tr td select {
+    max-width: 280px;
+    width: 100%;
+}
+.ifpwap-plugin .tab-content form table tr td textarea {
+    width: 280px;
+}
+.ifpwap-plugin a.ifpwap-icon-remove {
+    background: url(../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: 50% 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 0px;
+    text-decoration: none;
+    position: absolute;
+    border: 1px solid#2271b1;
+    border-radius: 50px;
+    padding: 0px;
+    right: -10px;
+    top: -10px;
+    background-color: #fff;
+}
+.ifpwap-plugin a.ifpwap-icon-upload.button{
+    background: #2271b1;
+    border-color: #2271b1;
+    color: #fff;
+}
+.ifpwap-plugin a.ifpwap-icon-upload:not(.button) {
+    border: 1px solid #8c8f94;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.ifpwap-plugin .ifpwap-icon-upload img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    display: block;
+}
+.ifpwap-plugin .ifpwap-upload-wrap {
+    display: inline-block;
+    position: relative;
+}
+label.ifpwap_cache {
+    display: block;
+}
+label.ifpwap_cache:not(:first-child) {
+    margin-top: 8px;
+}
+span.ifpwap_ctooltip {
+    margin-left: 5px;
+    cursor: pointer;
+    position: initial;
+    display: inline-flex;
+    align-items: center;
+}
+span.ifpwap_ctooltip sup {
+    width: 15px;
+    display: inline-block;
+    transform: translateY(-2px);
+}
+span.ifpwap_ctooltip sup img {
+    width: 100%;
+    max-width: 100%;
+}
+.form-table th{
+    position: relative;
+}
+label.ifpwap-tooltip-content {
+    position: absolute;
+    top: calc(52% + 6px);
+    left: 0;
+    background: #5A5F61;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 8px 10px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #fff;
+    border-radius: 3px;
+    line-height: 1.3;
+}
+span.ifpwap_ctooltip:hover .ifpwap-tooltip-content {
+    opacity: 1;
+    top: calc(52% + 16px);
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div {
+    display: flex;
+    background: #fff;
+    padding: 0em 2em;
+    /*align-items: flex-start;*/
+    border: 1px solid #c3c4c7;
+    border-top: none;
+    position: relative;
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div .form-table {
+    /*width: 50%;*/
+    /*padding: 15px;*/
+    clear: none;
+    border-collapse: separate;
+    margin-top: 0;
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-6 {
+    width: 50%;
+    padding: 15px;
+    clear: none;
+    position: relative;
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-12 {
+    width: 100%;
+    padding: 15px;
+    clear: none;
+    position: relative;
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-6 + .ifpwap-col-6 {
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-color: #ededed;
+    position: relative;
+}
+.ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-6 + .ifpwap-col-6::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #ededed;
+    top: 0;
+    left: 0;
+}
+.ifpwap-plugin.wrap .wp-picker-container span.wp-picker-input-wrap input[type="button"] {
+    min-width: auto !important;
+}
+.ifpwap-plugin.wrap .wp-picker-container.wp-picker-active span.wp-picker-input-wrap label input {
+    min-width: 200px;
+}
+.ifpwap-plugin.wrap .wp-picker-container.wp-picker-active span.wp-picker-input-wrap {
+    display: flex;
+}
+.ifpwap-plugin.wrap .wp-picker-container.wp-picker-active span.wp-picker-input-wrap label {
+    max-width: 198px;
+}
+.ifpwap_files_url {
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    max-width: 100%;
+    width: 50.25%;
+    border: 1px solid #c3c4c7;
+}
+
+.ifpwap_files_url h3 {
+    color: #333;
+    font-size: 24px;
+}
+
+.ifpwap_files_url p {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #c3c4c7;
+}
+
+.ifpwap_files_url p:hover {
+    /*transform: translateY(-5px);*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.ifpwap_files_url a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ifpwap_files_url a:hover {
+    text-decoration: underline;
+}
+
+.ifpwap_https {
+    color: #4CAF50; 
+    font-weight: bold;
+}
+
+.ifpwap_icon-link::before {
+    font-family: "Dashicons";
+    content: "\f147"; 
+    padding-right: 8px; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+@media(max-width:1024px){
+    .ifpwap-plugin.wrap .ifpwap-main-table-div{
+        flex-wrap: wrap;
+    }
+    /*.ifpwap-plugin.wrap .ifpwap-main-table-div .form-table{*/
+        .ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-6 {
+        width: 100%;
+    }
+    .ifpwap-plugin.wrap .ifpwap-main-table-div .form-table:first-child{
+        border-width: 0px;
+    }
+    /*.ifpwap-plugin.wrap .ifpwap-main-table-div::before*/
+    .ifpwap-plugin.wrap .ifpwap-main-table-div .ifpwap-col-6 + .ifpwap-col-6::before{
+        display: none;
+    }
+}

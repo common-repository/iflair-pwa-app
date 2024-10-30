@@ -1,0 +1,99 @@
+div#ifpwap_smallBanner,
+div#ifpwap_smallBanner + div {
+    float: right;
+    position: sticky;
+    width: 100%;
+    max-width: 290px;
+    text-align: center;
+    padding: 12px 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+    z-index: 99999;
+}
+div#ifpwap_smallBanner + div {
+    background-color: #EEEEEE !important;
+    position: fixed !important;
+}
+
+div#ifpwap_smallBanner p:last-child {margin: 0;}
+
+div#ifpwap_smallBanner + div > div {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    text-align: unset !important;
+    padding: 0 !important;
+    /*display: flex;*/
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+body.ifpwap-custom-pwa-banner {
+    padding-bottom: 81px;
+}
+
+div#ifpwap_smallBanner + div > div button {
+    padding: 8px 10px !important;
+}
+
+#ifpwap_smallBanner p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff; 
+    color: #ffffff; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin: 0; 
+    cursor: pointer;
+}
+
+#ifpwap_smallBanner p i {
+    font-size: 24px; /* Adjust the font size of the icon */
+}
+#ifpwap_installButton{
+    padding:10px 12px;text-transform: capitalize;
+}
+#ifpwap_cancelButton {
+    padding:10px 12px;text-transform: capitalize;
+}
+
+@media (max-width: 767px) {
+    body.ifpwap-custom-pwa-banner {
+        padding-bottom: 65px;
+    }
+    div#ifpwap_smallBanner, 
+    div#ifpwap_smallBanner + div {
+        max-width: 265px;
+        padding: 8px 20px !important;
+        left: 15px !important;
+        right: 15px;
+        bottom: 15px !important;
+        border-radius: 15px;
+    }
+    div#ifpwap_smallBanner p {
+        font-size: 16px;
+    }
+    div#ifpwap_smallBanner + div > div button {
+        padding: 7px 9px !important;
+        font-size: 15px;
+    }
+    #ifpwap_smallBanner p i {
+        font-size: 20px;
+    }
+    div#ifpwap_smallBanner {
+        justify-content: flex-end;
+    }
+}
